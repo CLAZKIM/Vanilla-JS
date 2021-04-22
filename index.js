@@ -1,11 +1,9 @@
-/*
+// Array : Object
 
-Multi line description
+//camel case  lowerOfWeek  space == upper 
 
-*/
+const something = "Something";
 
-//String
+const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", true, 33, something];
 
-const what = "KWT";
-
-console.log(what);
+console.log(daysOfWeek);
