@@ -1,9 +1,11 @@
-// Array : Object
+//Object
+const kwtInfo = {
+    name: "KWT",
+    age:25,
+    gender:"Male",
+    likeFood:"kimchi",
+    favMovies: ["Along the gods", "Spider Man", "Iron Man"],
+    favFood : [{name: "Kimchi", fatty:false}, {name: "Cheese burger", fatty:true}]
+};
 
-//camel case  lowerOfWeek  space == upper 
-
-const something = "Something";
-
-const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", true, 33, something];
-
-console.log(daysOfWeek);
+console.log(kwtInfo.favFood[0].name);
