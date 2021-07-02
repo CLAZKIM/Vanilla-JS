@@ -1,10 +1,9 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
 
-console.dir(h1);
-
-function handleH1Click() {
-    h1.classList.toggle("clicked");
+function onLoginSubmit(event) { // 첫번째 인자는 항상 이벤트 객체 정보를 받아온다
+    event.preventDefault(); // 브라우저의 기본 동작을 막아준다.
+    console.log(loginInput.value);
 }
 
-
-h1.addEventListener("click", handleH1Click);
+loginForm.addEventListener("submit", onLoginSubmit);
